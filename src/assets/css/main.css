@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #1b2431;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editor {
+    width: 375px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.editor-menu {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);;
+}
+
+button {
+    position: relative;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 250ms;
+    border: none;
+}
+
+button:hover {
+    background-color: #ff6e48;
+    color: #ffffff;
+}
+
+button label {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 10px;
+    right: 0;
+}
+
+button select {
+    position: relative;
+    top: 5px;
+}
+
+.editor-container {
+    background-color: rgba(255, 255, 255, 0.03);
+    width: 100%;
+    height: 250px;
+}
+
+.editor-field {
+    font-size: 1.6rem;
+    background: #ffc;
+    color: #000;
+    font-family: arial;
+    line-height: 1.5em;
+    padding: 2rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.editor-field:focus {
+    outline: none;
+}
+
+.modal-json {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .9);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-json {
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #ffffff;
+    padding: 20px;
+    overflow-y: scroll;
+    font-size: 15px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6e48;
+}
